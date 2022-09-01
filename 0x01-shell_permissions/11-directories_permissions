@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod ugo+rwx directories_permissions
+chmod ugo+x*/
