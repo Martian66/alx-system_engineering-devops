@@ -1,0 +1,23 @@
+total 80
+drwxr-xr-x 2 root root 4096 Sep  5 10:35 .
+drwxr-xr-x 6 root root  157 Sep  5 03:20 ..
+-rwxr--r-- 1 root root   32 Sep  5 03:47 0-hello_world
+-rwxr--r-- 1 root root   31 Sep  5 06:49 12-newest_files
+-rwxr--r-- 1 root root   26 Sep  5 07:13 13-unique
+-rwxr--r-- 1 root root   34 Sep  5 07:25 14-findthatword
+-rwxr--r-- 1 root root   50 Sep  5 09:46 18-letteronly
+-rwxr--r-- 1 root root   21 Sep  5 08:38 19-AZ
+-rwxr--r-- 1 root root   28 Sep  5 05:06 1-confused_smiley
+-rwxr--r-- 1 root root   23 Sep  5 08:18 20-hiago
+-rwxr--r-- 1 root root   16 Sep  5 07:37 21-reverse
+-rwxr--r-- 1 root root   28 Sep  5 04:09 2-hellofile
+-rwxr--r-- 1 root root   39 Sep  5 05:09 3-twofiles
+-rwxr--r-- 1 root root   33 Sep  5 04:18 4-lastlines
+-rwxr--r-- 1 root root   33 Sep  5 04:23 5-firstlines
+-rwxr--r-- 1 root root   40 Sep  5 06:03 6-third_line
+-rwxr--r-- 1 root root   99 Sep  5 06:33 7-file
+-rwxr--r-- 1 root root   38 Sep  5 10:35 8-cwd_state
+-rwxr--r-- 1 root root   28 Sep  5 10:27 9-duplicate_last_line
+-rw-r--r-- 1 root root   12 Sep  5 06:34 \*\\'"Best School"\'\\*$\?\*\*\*\*\*:)
+-rw-r--r-- 1 root root    0 Sep  5 10:35 ls_cwd_content
+-rw-r--r-- 1 root root   19 Sep  5 03:24 README.md
