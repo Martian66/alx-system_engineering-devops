@@ -1,2 +1,2 @@
 #!/bin/bash
-NUM=6.66 | printf "%.2f \n" $num
+printf "%.2f" $NUM | sort
