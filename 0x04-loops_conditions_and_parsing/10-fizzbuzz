@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# script that displays numbers from 1 to 100
+# Script that displays numbers from 1 to 100
 
 for num in {1..100}
 do
-  if (( num % 3 == 0 && num 5 == 0 ))
+  if (( num % 3 == 0 && num % 5 == 0 ))
   then
     echo "FizzBuzz"
   elif (( num % 3 == 0 ))
@@ -11,7 +11,7 @@ do
     echo "Fizz"
   elif (( num % 5 == 0 ))
   then
-     echo "Buzz"
+    echo "Buzz"
   else
     echo "$num"
   fi
