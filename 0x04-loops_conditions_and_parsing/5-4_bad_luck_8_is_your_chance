@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # This script loops from 1 to 10 and displays:
-#	"bad luck" in 4th iteration
-#	"good luck" in the 8th iteration
-#	"Best School" for all other iterations
+# "bad luck" in 4th iteration
+# "good luck" in the 8th iteration
+# "Best School" for all other iterations
 
 i = "0"
 
