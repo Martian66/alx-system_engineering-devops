@@ -4,7 +4,7 @@
 #   "good luck" for the 8th iteration
 #   "Best School" for all other iterations
 
-i = "0"
+i=0
 
 while [ $i -lt 10 ]
 do
@@ -17,5 +17,5 @@ do
   else
     echo "Best School"
   fi
-  (( i++ ))
+  ((i++))
 done
