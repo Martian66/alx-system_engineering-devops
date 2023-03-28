@@ -1,7 +1,15 @@
 #!/usr/bin/env bash
 # Script to install nginx on my server
-apt-get update
-apt-get -y install nginx
-ufw allow 'Nginx HTTP'
-echo "Hello World!" > /var/www/html/index.html
-service nginx start
+sudo apt-get update
+sudo apt-get install nginx -y
+sudo rm /etc/nginx/sites-enabled/default
+sudo touch /etc/nginx/sites-available/hello-world
+echo "
+server {
+    listen 80;
+    location / {
+        return 200 'Hello World!';
+    }
+}" | sudo tee /etc/nginx/sites-available/hello-world
+sudo ln -s /etc/nginx/sites-available/hello-world /etc/nginx/sites-enabled/
+sudo nginx -t && sudo service nginx reload
