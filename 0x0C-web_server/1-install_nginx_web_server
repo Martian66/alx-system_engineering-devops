@@ -1,9 +1,30 @@
 #!/usr/bin/env bash
-# Script to install nginx on my server
+# Script to install nginx
+
 sudo apt update
 sudo apt install -y nginx
-sudo ufw app list
-sudo ufw allow 'Nginx HTTP'
-sudo ufw status
-echo "Hello World" > /var/www/html/index.html
-service nginx start
+sudo sh -c 'cat > /etc/nginx/sites-available/hello-world <<EOF
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+
+    root /var/www/html;
+
+    index index.html;
+
+    server_name _;
+
+    location / {
+        return 200 "Hello World!";
+    }
+}
+EOF'
+
+# Remove the default server block
+sudo rm /etc/nginx/sites-enabled/default
+
+# Enable the new server block
+sudo ln -s /etc/nginx/sites-available/hello-world /etc/nginx/sites-enabled/hello-world
+
+# Restart Nginx
+sudo kill -s HUP "$(cat "/run/nginx.pid")"
